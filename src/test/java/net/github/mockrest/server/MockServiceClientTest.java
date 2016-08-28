@@ -14,13 +14,13 @@ import org.junit.Test;
 import net.github.mockrest.server.MockServer;
 import net.github.mockrest.server.MockServiceClient;
 
-public class MockRestServiceClientTest {
+public class MockServiceClientTest {
 	
 	private MockServer mockRestService = null;
 
 	@Before
 	public void setup() throws Exception {
-		mockRestService = new MockServer("/");
+		mockRestService = new MockServer();
 		mockRestService.start();
 	}
 	

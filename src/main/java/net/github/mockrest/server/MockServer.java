@@ -9,7 +9,11 @@ import net.github.mockrest.server.expectation.ExpectationManager;
 public class MockServer {
 
 	private Server server;
-	
+
+	public MockServer() throws Exception {
+		this(8080, new ExpectationManager());
+	}
+
 	public MockServer(String fileName) throws Exception {
 		this(8080, new ExpectationManager(fileName));
 	}

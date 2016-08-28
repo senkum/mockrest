@@ -53,7 +53,7 @@ public class MockServerTest {
 		params.put("key", "value");
 		MockServiceClient client = new MockServiceClient();
 		MockServer service = null;
-		service = new MockServer("/");
+		service = new MockServer();
 		assertTrue(service.start());
 		client.expectationBuilder("test", params, "test");
 		boolean startExpectionOccured = false;
@@ -83,7 +83,7 @@ public class MockServerTest {
 		MockServer service = null;
 		boolean stopExpectionOccured = false;
 		try {
-			service = new MockServer("/");
+			service = new MockServer();
 			boolean clientExpectionOccured = false;
 			try {
 				client.expectationBuilder("test", params, "test");
