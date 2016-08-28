@@ -7,16 +7,16 @@ import org.eclipse.jetty.client.HttpClient;
 import lombok.SneakyThrows;
 import net.github.mockrest.util.RequestUtil;
 
-public class MockRestServiceClient {
+public class MockServiceClient {
 	
 	private String host;
 	private int port;
 	
-	public MockRestServiceClient() {
+	public MockServiceClient() {
 		this("localhost", 8080);
 	}
 	
-	public MockRestServiceClient(String host, int port) {
+	public MockServiceClient(String host, int port) {
 		this.host = host;
 		this.port = port;
 	}

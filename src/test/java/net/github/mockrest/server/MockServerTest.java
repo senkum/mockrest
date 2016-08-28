@@ -12,7 +12,7 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
 import net.github.mockrest.server.MockServer;
-import net.github.mockrest.server.MockRestServiceClient;
+import net.github.mockrest.server.MockServiceClient;
 
 public class MockServerTest {
 	
@@ -26,13 +26,13 @@ public class MockServerTest {
 
 		String args[] = {};
 		MockServer service = MockServer.create(args);
-		MockRestServiceClient client = new MockRestServiceClient();
+		MockServiceClient client = new MockServiceClient();
 		client.expectationBuilder("test", params, "test");				
 		service.stop();
 		
 		args = new String[]{"8082"};
 		service = MockServer.create(args);
-		client = new MockRestServiceClient("localhost", 8082);
+		client = new MockServiceClient("localhost", 8082);
 		client.expectationBuilder("test", params, "test");
 		service.stop();
 
@@ -42,7 +42,7 @@ public class MockServerTest {
 		bw.close();
 		args = new String[]{"8082", jsonFileName};
 		service = MockServer.create(args);
-		client = new MockRestServiceClient("localhost", 8082);
+		client = new MockServiceClient("localhost", 8082);
 		client.expectationBuilder("test", params, "test");
 		service.stop();
 	}
@@ -51,7 +51,7 @@ public class MockServerTest {
 	public void testStart() throws Exception {
 		Map<String, String> params = new HashMap<>();
 		params.put("key", "value");
-		MockRestServiceClient client = new MockRestServiceClient();
+		MockServiceClient client = new MockServiceClient();
 		MockServer service = null;
 		service = new MockServer("/");
 		assertTrue(service.start());
@@ -78,7 +78,7 @@ public class MockServerTest {
 	public void testStop() throws Exception {
 		Map<String, String> params = new HashMap<>();
 		params.put("key", "value");
-		MockRestServiceClient client = new MockRestServiceClient();
+		MockServiceClient client = new MockServiceClient();
 
 		MockServer service = null;
 		boolean stopExpectionOccured = false;

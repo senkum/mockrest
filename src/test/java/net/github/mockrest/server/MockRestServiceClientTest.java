@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import net.github.mockrest.server.MockServer;
-import net.github.mockrest.server.MockRestServiceClient;
+import net.github.mockrest.server.MockServiceClient;
 
 public class MockRestServiceClientTest {
 	
@@ -31,7 +31,7 @@ public class MockRestServiceClientTest {
 	
 	@Test
 	public void test() throws Exception {
-		MockRestServiceClient mockRestServiceClient = new MockRestServiceClient();
+		MockServiceClient mockRestServiceClient = new MockServiceClient();
 		Map<String, String> requestParams = new HashMap<>();
 		requestParams.put("key1", "this%20is%20first%20value");
 		requestParams.put("key2", "this**is~~second!!value");
