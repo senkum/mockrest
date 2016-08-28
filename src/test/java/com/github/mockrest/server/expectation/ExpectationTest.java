@@ -1,4 +1,4 @@
-package net.github.mockrest.server.expectation;
+package com.github.mockrest.server.expectation;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,8 +9,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import net.github.mockrest.server.expectation.Expectation;
-import net.github.mockrest.server.expectation.Expectation.ExpectationBuilder;
+import com.github.mockrest.server.expectation.Expectation;
+import com.github.mockrest.server.expectation.Expectation.ExpectationBuilder;
 
 public class ExpectationTest {
 

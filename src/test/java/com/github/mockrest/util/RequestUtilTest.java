@@ -1,4 +1,4 @@
-package net.github.mockrest.util;
+package com.github.mockrest.util;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import net.github.mockrest.util.RequestUtil;
+import com.github.mockrest.util.RequestUtil;
 
 public class RequestUtilTest {
 

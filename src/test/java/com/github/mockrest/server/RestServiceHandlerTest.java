@@ -1,4 +1,4 @@
-package net.github.mockrest.server;
+package com.github.mockrest.server;
 
 import static org.easymock.EasyMock.createControl;
 import static org.easymock.EasyMock.expect;
@@ -19,9 +19,9 @@ import org.easymock.IMocksControl;
 import org.eclipse.jetty.server.Request;
 import org.junit.Test;
 
-import net.github.mockrest.server.RestServiceHandler;
-import net.github.mockrest.server.expectation.Expectation;
-import net.github.mockrest.server.expectation.ExpectationManager;
+import com.github.mockrest.server.RestServiceHandler;
+import com.github.mockrest.server.expectation.Expectation;
+import com.github.mockrest.server.expectation.ExpectationManager;
 
 public class RestServiceHandlerTest {
 

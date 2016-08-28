@@ -1,16 +1,16 @@
-package net.github.mockrest.server.expectation;
+package com.github.mockrest.server.expectation;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.mockrest.util.RequestUtil;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.SneakyThrows;
-import net.github.mockrest.util.RequestUtil;
 
 @Getter
 @Setter

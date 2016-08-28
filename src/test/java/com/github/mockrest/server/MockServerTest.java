@@ -1,4 +1,4 @@
-package net.github.mockrest.server;
+package com.github.mockrest.server;
 
 import static org.junit.Assert.assertTrue;
 
@@ -11,8 +11,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
-import net.github.mockrest.server.MockServer;
-import net.github.mockrest.server.MockServiceClient;
+import com.github.mockrest.server.MockServer;
+import com.github.mockrest.server.MockServiceClient;
 
 public class MockServerTest {
 	

@@ -1,11 +1,12 @@
-package net.github.mockrest.server;
+package com.github.mockrest.server;
 
 import java.util.Map;
 
 import org.eclipse.jetty.client.HttpClient;
 
+import com.github.mockrest.util.RequestUtil;
+
 import lombok.SneakyThrows;
-import net.github.mockrest.util.RequestUtil;
 
 public class MockServiceClient {
 	

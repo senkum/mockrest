@@ -1,4 +1,4 @@
-package net.github.mockrest.server;
+package com.github.mockrest.server;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
-import net.github.mockrest.server.expectation.Expectation;
-import net.github.mockrest.server.expectation.ExpectationManager;
+import com.github.mockrest.server.expectation.Expectation;
+import com.github.mockrest.server.expectation.ExpectationManager;
 
 public class RestServiceHandler extends AbstractHandler {
 

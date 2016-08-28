@@ -1,4 +1,4 @@
-package net.github.mockrest.server.expectation;
+package com.github.mockrest.server.expectation;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,8 +11,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
-import net.github.mockrest.server.expectation.Expectation;
-import net.github.mockrest.server.expectation.ExpectationManager;
+import com.github.mockrest.server.expectation.Expectation;
+import com.github.mockrest.server.expectation.ExpectationManager;
 
 public class ExpectationManagerTest {
 	

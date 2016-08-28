@@ -1,4 +1,4 @@
-package net.github.mockrest.server.expectation;
+package com.github.mockrest.server.expectation;
 
 import java.io.File;
 import java.util.HashMap;
@@ -6,8 +6,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import net.github.mockrest.util.RequestUtil;
+import com.github.mockrest.util.RequestUtil;
 
 public class ExpectationManager {
 

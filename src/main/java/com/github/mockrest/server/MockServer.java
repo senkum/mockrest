@@ -1,10 +1,10 @@
-package net.github.mockrest.server;
+package com.github.mockrest.server;
 
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
 
-import net.github.mockrest.server.expectation.ExpectationManager;
+import com.github.mockrest.server.expectation.ExpectationManager;
 
 public class MockServer {
 

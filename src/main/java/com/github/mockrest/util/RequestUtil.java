@@ -1,4 +1,4 @@
-package net.github.mockrest.util;
+package com.github.mockrest.util;
 
 import java.net.URLEncoder;
 import java.util.Map;
